@@ -3,46 +3,120 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rimeso · Games</title>
-<meta name="description" content="Rimeso makes small, hand-drawn mobile games. Arrow Climb: Stickman Parkour is out now on Google Play.">
+<title>Rimeso · Independent mobile game studio</title>
+<meta name="description" content="Rimeso is an independent mobile game studio. Our games are easy to start and hard to put down. Arrow Climb: Stickman Parkour is out now on Google Play.">
+<meta property="og:title" content="Rimeso · Independent mobile game studio">
+<meta property="og:description" content="Games that are easy to start and hard to put down. Arrow Climb is out now on Google Play.">
+<meta property="og:image" content="https://getsettalk.github.io/arrow-climb/img/feature.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="/">RIME<b>SO</b></a>
-    <nav><a href="#games">Games</a><a href="/privacy/">Privacy</a><a href="#contact">Contact</a></nav>
-  </header>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/"><i>r</i>rimeso</a>
+    <nav><a href="#games">Games</a><a href="#studio">Studio</a><a href="#contact">Contact</a></nav>
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.arrowclimb.game">Play Arrow Climb</a>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1>Small games,<span>drawn by hand.</span></h1>
-    <p>Rimeso makes mobile games with a sketchbook look: easy to start, hard to put down.</p>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Independent game studio</span>
+      <h1>Games that are easy to start and <em>hard to put down.</em></h1>
+      <p class="lead">Rimeso makes mobile games with their own worlds, fair challenges and a lot of heart. Small downloads, big adventures.</p>
+      <div class="ctas">
+        <a class="btn accent" href="#games">Explore our games</a>
+        <a class="btn ghost" href="https://play.google.com/store/apps/dev?id=8622689331197186605">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6l15.8-9.2c.4-.2.4-.8 0-1L4.9 2.2C4.5 2 4 2.3 4 2.8z"/></svg>
+          Rimeso on Google Play</a>
+      </div>
+    </div>
+    <div class="phones" aria-hidden="true">
+      <div class="phone a"><img src="/arrow-climb/img/play-03-cart.jpg" alt="" width="540" height="960"></div>
+      <div class="phone b"><img src="/arrow-climb/img/play-04-balloons.jpg" alt="" width="540" height="960"></div>
+      <div class="phone c"><img src="/arrow-climb/img/play-05-river.jpg" alt="" width="540" height="960"></div>
+    </div>
+  </div>
+</section>
+
+<section class="featured" aria-labelledby="featured-title">
+  <div class="wrap">
+    <div>
+      <span class="badge">Out now on Google Play</span>
+      <h2 id="featured-title">Arrow Climb: Stickman Parkour</h2>
+      <p>Enemy archers shoot arrows to stop you, and every arrow that sticks becomes your next step. Fall down wells, ride mine carts, bounce over the clouds and fly a hot-air balloon through a storm.</p>
+      <div class="stats">
+        <div class="stat"><b>200+</b><span>levels</span></div>
+        <div class="stat"><b>5</b><span>worlds</span></div>
+        <div class="stat"><b>Free</b><span>to play</span></div>
+        <div class="stat"><b>Offline</b><span>play</span></div>
+      </div>
+      <div class="ctas">
+        <a class="btn light" href="https://play.google.com/store/apps/details?id=com.arrowclimb.game">Get it on Google Play</a>
+        <a class="btn ghost" href="/arrow-climb/">See the game</a>
+      </div>
+    </div>
+    <a class="shot" href="/arrow-climb/"><img src="/arrow-climb/img/feature.jpg" alt="Arrow Climb: balloons above the clouds and a fall down a well" width="1024" height="500"></a>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="block" id="games">
+    <div class="section-head">
+      <div><span class="eyebrow">Our games</span><h2>Pick a world</h2></div>
+      <p>Every game has its own page with screenshots, details and its privacy policy.</p>
+    </div>
+    <div class="grid">
+      <!-- one card per game: copy this <a> for a new game -->
+      <a class="gcard" href="/arrow-climb/">
+        <img class="cover" src="/arrow-climb/img/feature.jpg" alt="" width="1024" height="500" loading="lazy">
+        <div class="body">
+          <div class="row"><img src="/arrow-climb/img/icon-256.png" alt="" width="56" height="56">
+            <div><h3>Arrow Climb</h3><div class="tags"><span>Action</span><span>Platformer</span><span>Offline</span></div></div></div>
+          <p>Climb the arrows your enemies shoot at you, through 200+ levels of wells, mine carts, balloons and stormy rivers.</p>
+          <span class="more">View game →</span>
+        </div>
+      </a>
+      <div class="gcard soon">
+        <div class="dot">✦</div>
+        <h3>Next game in the workshop</h3>
+        <p>A new world is being drawn. It will show up here first.</p>
+      </div>
+    </div>
   </section>
 
-  <h2 class="sec" id="games">Our games</h2>
-  <div class="games">
-    <!-- one card per game; copy this block for a new game -->
-    <article class="card game">
-      <div class="head">
-        <img src="/arrow-climb/img/icon-256.png" alt="Arrow Climb icon" width="84" height="84">
-        <h3>Arrow Climb: Stickman Parkour</h3>
-      </div>
-      <p>Climb the arrows your enemies shoot at you. Fall down wells, ride mine carts, bounce on balloons and fly over a stormy river.</p>
-      <div class="links">
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.arrowclimb.game">Get it on Google Play</a>
-        <a href="/arrow-climb/">More</a>
-      </div>
-    </article>
-    <div class="card soon"><p>More games are on the way.</p></div>
-  </div>
+  <section class="block" id="studio">
+    <div class="section-head">
+      <div><span class="eyebrow">The studio</span><h2>What we care about</h2></div>
+    </div>
+    <div class="values">
+      <div class="value"><div class="ic" style="background:#ffe6e2">✏️</div><h3>Worlds with character</h3><p>Every game gets its own look, drawn by hand, so it never feels like any other game on your phone.</p></div>
+      <div class="value"><div class="ic" style="background:#e5e8ff">🎯</div><h3>Fair challenge</h3><p>Every danger is warned before it hits, and checkpoints keep a fall from costing you the whole level.</p></div>
+      <div class="value"><div class="ic" style="background:#fff1d6">📶</div><h3>Light and offline</h3><p>Small downloads that run smoothly on most phones and play without an internet connection.</p></div>
+    </div>
+  </section>
 
-  <footer id="contact">
-    <p>© 2026 Rimeso · <a href="mailto:rajrock7254@gmail.com">rajrock7254@gmail.com</a> · <a href="/privacy/">Privacy policies</a> · <a href="https://play.google.com/store/apps/dev?id=8622689331197186605">Rimeso on Google Play</a></p>
-  </footer>
+  <div class="cta-band">
+    <div><h2>How far can you climb?</h2><p>Arrow Climb is waiting for you on Google Play.</p></div>
+    <a class="btn light" href="https://play.google.com/store/apps/details?id=com.arrowclimb.game">Get Arrow Climb</a>
+  </div>
 </div>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+    <a class="logo" href="/"><i>r</i>rimeso</a>
+    <nav>
+      <a href="mailto:rajrock7254@gmail.com">rajrock7254@gmail.com</a>
+      <a href="/privacy/">Privacy policies</a>
+      <a href="https://play.google.com/store/apps/dev?id=8622689331197186605">Google Play</a>
+    </nav>
+    <span>© 2026 Rimeso</span>
+  </div>
+</footer>
 </body>
 </html>
