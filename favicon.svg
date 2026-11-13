@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+      <defs><radialGradient id="tile" cx="50%" cy="28%" r="85%"><stop offset="0" stop-color="#cc4432"/><stop offset="1" stop-color="#a52f22"/></radialGradient></defs>
+      <rect width="1024" height="1024" fill="url(#tile)"/><g transform="translate(0 0) scale(1)"><path d="M 790 640 L 1600 640 L 1600 1600 L 790 1600 Z" fill="#cdbf9f"/>
+      <path d="M 1600 640 L 790 640 L 790 1600" fill="none" stroke="#222" stroke-width="16" stroke-linejoin="round"/>
+      <path d="M 860 720 l 18 34 l -12 30 M 930 900 l -14 30" fill="none" stroke="#222" stroke-opacity=".25" stroke-width="8" stroke-linecap="round"/>
+         // sized so a round launcher mask doesn't clip the corner letters
+      <g transform="translate(790 846) rotate(0)" stroke-linecap="round">
+      <line x1="-470" y1="0" x2="0" y2="0" stroke="#222" stroke-width="62.56"/>
+      <line x1="-470" y1="0" x2="0" y2="0" stroke="#a0703c" stroke-width="34"/>
+      <path d="M -456.4 -10.2 L -531.2 -66.3 L -425.8 -66.3 L -368 -10.2 Z" fill="#fffaf0" stroke="#222" stroke-width="14.28" stroke-linejoin="round"/><path d="M -456.4 10.2 L -531.2 66.3 L -425.8 66.3 L -368 10.2 Z" fill="#fffaf0" stroke="#222" stroke-width="14.28" stroke-linejoin="round"/>
+      <path d="M 6.800000000000001 -32.3 l 25.5 -25.5 M 6.800000000000001 32.3 l 22.1 27.200000000000003" stroke="#222" stroke-opacity=".55" stroke-width="11.424" fill="none"/>
+    </g>
+      <g fill="none" stroke="#222" stroke-width="22.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 452 591 L 452 678 M 452 678 L 434 747 L 422 816 M 452 678 L 470 747 L 485 816 M 452 618 L 386 552 L 374 498 M 452 618 L 518 552 L 536 501"/></g>
+      <path d="M 452 588 Q 386 624 314 597" fill="none" stroke="#f2b81a" stroke-width="28.5" stroke-linecap="round"/>
+      <circle cx="452" cy="522" r="60" fill="#fff" stroke="#222" stroke-width="21"/>
+      <circle cx="477.5" cy="511.5" r="12" fill="#222"/></g></svg>

@@ -1,0 +1,68 @@
+/* Rimeso — the studio website. Sketchbook look, like the games: paper, ink outlines, a red accent. */
+:root{--paper:#f4eee0;--card:#fffaf0;--ink:#222;--soft:#5b5347;--red:#d32f2f;--line:#d9cfba;}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.6 "Kalam","Segoe UI",system-ui,-apple-system,sans-serif;}
+a{color:var(--red);text-underline-offset:3px;}
+img{max-width:100%;height:auto;display:block;}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px;}
+.marker{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400;}
+/* top bar */
+.top{display:flex;align-items:center;gap:16px;padding:18px 0;flex-wrap:wrap;}
+.brand{font-family:"Permanent Marker","Comic Sans MS",cursive;font-size:30px;color:var(--ink);text-decoration:none;transform:rotate(-2deg);}
+.brand b{color:var(--red);font-weight:400;}
+.top nav{margin-left:auto;display:flex;gap:18px;font-weight:700;}
+.top nav a{color:var(--ink);text-decoration:none;}
+.top nav a:hover{color:var(--red);}
+/* hero */
+.hero{padding:34px 0 18px;text-align:center;}
+.hero h1{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400;font-size:clamp(40px,8vw,72px);line-height:.95;margin:0;transform:rotate(-2deg);}
+.hero h1 span{display:block;color:var(--red);}
+.hero p{color:var(--soft);font-size:21px;margin:18px auto 0;max-width:620px;}
+/* cards */
+.card{background:var(--card);border:3px solid var(--ink);border-radius:20px 9px 18px 11px;box-shadow:7px 8px 0 rgba(20,16,10,.15);}
+h2.sec{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400;font-size:30px;margin:44px 0 16px;}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;}
+.game{padding:20px;display:flex;flex-direction:column;gap:12px;}
+.game .head{display:flex;gap:14px;align-items:center;}
+.game .head img{width:84px;height:84px;border:3px solid var(--ink);border-radius:24%;}
+.game h3{margin:0;font-size:22px;line-height:1.2;}
+.game p{margin:0;color:var(--soft);}
+.game .links{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:auto;}
+.soon{padding:20px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--soft);border-style:dashed;box-shadow:none;min-height:180px;}
+/* buttons */
+.btn{display:inline-block;font-family:"Permanent Marker","Comic Sans MS",cursive;color:#fffaf0;background:var(--red);border:3px solid var(--ink);border-radius:16px 8px 14px 9px;box-shadow:5px 6px 0 rgba(20,16,10,.22);padding:8px 18px 6px;text-decoration:none;font-size:20px;}
+.btn:hover{transform:translate(-1px,-1px);}
+/* game page */
+.gamehero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:24px 0;}
+.gamehero .feature{border:3px solid var(--ink);border-radius:18px 9px 16px 10px;box-shadow:7px 8px 0 rgba(20,16,10,.15);}
+.gamehero h1{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400;font-size:clamp(34px,6vw,54px);line-height:1;margin:0 0 6px;}
+.gamehero h1 span{color:var(--red);}
+.gamehero .tag{color:var(--soft);font-size:21px;margin:0 0 18px;}
+.shots{display:flex;gap:16px;overflow-x:auto;padding:6px 4px 18px;scroll-snap-type:x mandatory;}
+.shots img{width:220px;flex:0 0 auto;border:3px solid var(--ink);border-radius:18px;scroll-snap-align:start;}
+.features{padding:22px 26px;}
+.features ul{margin:6px 0;padding-left:22px;}
+.features li{margin:6px 0;}
+/* text pages (privacy) */
+.doc{max-width:760px;margin:0 auto;}
+.doc h1{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400;font-size:40px;line-height:1.05;margin:26px 0 4px;}
+.doc .date{color:var(--soft);margin:0 0 10px;}
+.doc h2{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400;font-size:24px;line-height:1.2;margin:30px 0 8px;}
+.doc h2 em{font-style:normal;color:var(--red);}
+.doc h3{font-size:19px;margin:18px 0 4px;}
+.doc .card{padding:18px 20px;margin:20px 0;}
+.doc table{width:100%;border-collapse:collapse;margin:10px 0;font-size:16px;}
+.doc th,.doc td{border-bottom:1.5px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top;}
+.doc th{font-size:15px;color:var(--soft);}
+.list{padding:0;list-style:none;}
+.list li{margin:10px 0;}
+/* footer */
+footer{margin-top:56px;padding:26px 0 40px;border-top:2px dashed var(--line);color:var(--soft);font-size:16px;text-align:center;}
+footer a{color:var(--soft);}
+@media (max-width:720px){
+  body{font-size:17px;}
+  .gamehero{grid-template-columns:1fr;}
+  .top nav{margin-left:0;width:100%;}
+  .shots img{width:170px;}
+}
